@@ -4,5 +4,4 @@ from .models import Books
 
 class BookListView(ListView):
     model = Books
-    template_name = 'library.'
 
