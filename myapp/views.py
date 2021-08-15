@@ -3,5 +3,5 @@ from .models import Books
 
 
 class BookListView(ListView):
-    model = Books
+    model = Books;
 
