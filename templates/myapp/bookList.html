@@ -1,0 +1,14 @@
+<h1>Kitoblar ro'yxati:</h1>
+
+{% for list in object_list %}
+
+<ul>
+    <li><strong>Kitob nomi:</strong> {{ list.title }}</li>
+    <li><strong>Kitob haqida(annotatsiya):</strong> <em>{{ list.about }}</em></li>
+    <li><strong>Kitob sahifalari soni:</strong> {{ list.pages }} sahifa</li>
+    <li><strong>Muallif:</strong> {{ list.author }}</li>
+    <li><strong>ISBN raqami:</strong> {{ list.isbn }}</li>
+    <br>
+</ul>
+
+{% endfor %}

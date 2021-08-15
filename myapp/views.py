@@ -3,5 +3,6 @@ from .models import Books
 
 
 class BookListView(ListView):
-    model = Books;
+    model = Books
+    template_name = 'myapp/bookList.html'
 
