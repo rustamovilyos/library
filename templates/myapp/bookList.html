@@ -8,7 +8,11 @@
     <li><strong>Kitob sahifalari soni:</strong> {{ list.pages }} sahifa</li>
     <li><strong>Muallif:</strong> {{ list.author }}</li>
     <li><strong>ISBN raqami:</strong> {{ list.isbn }}</li>
-    <br>
+    {% if list.book_photo %}
+    <li><img src="{{ list.book_photo.url }}" alt="..."></li>
+    {% endif %}
+    <li><a href="{{ list.book_file.url }}" download=""><button>Download book</button></a></li>
+    <hr>
 </ul>
 
 {% endfor %}

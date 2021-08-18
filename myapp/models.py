@@ -8,6 +8,8 @@ class Books(models.Model):
     pages = models.IntegerField(null=True)
     author = models.CharField(max_length=200)
     isbn = models.CharField(max_length=13)
+    book_file = models.FileField(upload_to='media/doc/', null=True)
+    book_photo = models.ImageField(null=True, blank=True)
 
     def __str__(self):
         return self.title
